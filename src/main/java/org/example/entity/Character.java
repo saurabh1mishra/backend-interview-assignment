@@ -10,8 +10,7 @@ import lombok.Setter;
 @Setter
 @Getter
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class Char {
-
+public class Character {
     @JsonProperty("url")
     public String url;
     @JsonProperty("name")

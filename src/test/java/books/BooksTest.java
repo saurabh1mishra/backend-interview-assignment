@@ -2,7 +2,7 @@ package books;
 
 import org.example.BookClient;
 import org.example.entity.Books;
-import org.example.entity.Char;
+import org.example.entity.Character;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -48,7 +48,7 @@ public class BooksTest {
         result.parallelStream().forEach(url -> {
             String[] arr = url.split("/");
             int id = Integer.parseInt(arr[arr.length - 1]);
-            Char chars = this.bookClient.getChar(id);
+            Character chars = this.bookClient.getChar(id);
             System.out.println(chars.getName());
 
         });
